@@ -47,6 +47,9 @@ for (let z = 0; z < names.length; z++) {
     console.log(names[z]);
   }
 }
+
+console.log("--------");
+
 // drugi način -> splice()
 for (let z = 0; z < names.length; z++) {
   if (names[z] === undefined) {
