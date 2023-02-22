@@ -38,20 +38,19 @@ for (let j = 0; j < names.length; j++) {
 
 console.log("---- 4. zadatak ----");
 
-// prvi način -> delete
+// prvi način -> splice()
 
 for (let z = 0; z < names.length; z++) {
   if (names[z] === undefined) {
     names.splice(z, 1);
-  } else {
-    console.log(names[z]);
   }
+  console.log(names[z]);
 }
-// drugi način -> splice()
-for (let z = 0; z < names.length; z++) {
-  if (names[z] === undefined) {
-    delete names[z];
-  } else {
-    console.log(names[z]);
-  }
-}
+// drugi način -> delete -> NEPOUZDANA METODA
+// for (let z = 0; z < names.length; z++) {
+//   if (names[z] === undefined) {
+//     delete names[z];
+//   } else {
+//     console.log(names[z]);
+//   }
+// }
