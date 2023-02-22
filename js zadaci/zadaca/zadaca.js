@@ -46,7 +46,7 @@ for (let z = 0; z < names.length; z++) {
   }
   console.log(names[z]);
 }
-// drugi način -> delete -> NEPOUZDANA METODA
+// drugi način -> delete -> NEPOUZDANA METODA (ova metoda ne obriše element u potpunosti)
 // for (let z = 0; z < names.length; z++) {
 //   if (names[z] === undefined) {
 //     delete names[z];
