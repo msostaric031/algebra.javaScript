@@ -38,7 +38,7 @@ for (let j = 0; j < names.length; j++) {
 
 console.log("---- 4. zadatak ----");
 
-// prvi način -> delete
+// prvi način -> splice()
 
 for (let z = 0; z < names.length; z++) {
   if (names[z] === undefined) {
@@ -47,7 +47,6 @@ for (let z = 0; z < names.length; z++) {
     console.log(names[z]);
   }
 }
-
 console.log("--------");
 
 // drugi način -> splice()
@@ -57,4 +56,13 @@ for (let z = 0; z < names.length; z++) {
   } else {
     console.log(names[z]);
   }
+  console.log(names[z]);
 }
+// drugi način -> delete -> NEPOUZDANA METODA (ova metoda ne obriše element u potpunosti)
+// for (let z = 0; z < names.length; z++) {
+//   if (names[z] === undefined) {
+//     delete names[z];
+//   } else {
+//     console.log(names[z]);
+//   }
+// }
