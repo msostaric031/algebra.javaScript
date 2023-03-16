@@ -1,6 +1,5 @@
-function getX() {
-  return Math.random() >= 0.5;
-}
+const getX = () => Math.random() >= 0.5;
+
 var wait = new Promise((resolve, reject) => {
   const x = getX();
   if (x) {
