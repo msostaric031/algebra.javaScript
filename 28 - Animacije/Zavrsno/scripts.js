@@ -6,9 +6,19 @@ const row = grid[1];
 const numberOfElements = col * row;
 
 for (let i = 0; i < numberOfElements; i++) {
-  fragment.appendChild(document.createElement("div"));
+  let createdItem = fragment.appendChild(document.createElement("div"));
+  // add id attribute to every created div
+  createdItem.setAttribute("id", i);
 }
 
+// change color of every created div (selected divs are type null) - doesn't work
+const changeColor = () => {
+  for (let i = 0; i < numberOfElements; i++) {
+    let item = document.getElementById(`#${i}`);
+    console.log(item);
+  }
+};
+changeColor();
 staggerVisualizerEl.appendChild(fragment);
 
 const staggersAnimation = anime
